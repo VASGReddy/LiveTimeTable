@@ -1,119 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Live Time Table</title>
-	<link rel="stylesheet" type="text/css" href="style.css" />
-</head>
-<body>
-    <div class="container">
-        <b><div id="displaytime"> </div></b>
-		<h3>SEM III - TIME TABLE</h3>
-		<table border="3" cellspacing="0">
-			<tr>
-				<th>
-					<br>Day/Period
-				</th>
-				<th>
-					I <br> <small>10:00-11:00</small>
-				</th>
-				<th>
-					II <br> <small>11:00-12:00</small>
-				</th>
-				<th>
-					III <br> <small>12:00-01:00</small>
-				</th>
-				<th>
-					01:00 <br> - <br> 02:00
-				</th>
-				<th>
-					IV <br> <small>2:00-3:00</small>
-				</th>
-				<th>
-					V <br> <small>03:00-04:00</small>
-				</th>
-				<th>
-					VI <br> <small>04:00-05:00</small>
-				</th>
-			</tr>
-			<tr>
-				<th>
-					Monday
-				</th>
-				<td><div class = "InactiveSubjectOutline" id="Mon1"> WT </div> ANRM </td>
-				<td><div class = "InactiveSubjectOutline" id="Mon2"> CC </div> CHSR </td>
-				<td><div class = "InactiveSubjectOutline" id="Mon3"> BDA </div> PSR </td>
-				<td rowspan="6" width ="40" >
-					<div class = "InactiveSubjectOutline" id="LunchBreak"> L<br>U<br>N<br>C<br>H </div>
-				</td>
-				<td><div class = "InactiveSubjectOutline" id="Mon4"> ISC </div> KLR </td>
-				<td colspan="2">
-					<div class = "InactiveSubjectOutline" id="mon56"> BDA LAB </div> PSR
-				</td>
-			</tr>
-			<tr>
-				<th>
-					Tuesday
-				</th>
-				<td><div class = "InactiveSubjectOutline" id="Tue1"> BDA </div> PSR </td>
-				<td><div class = "InactiveSubjectOutline" id="Tue2"> CC </div> CHSR </td>
-				<td><div class = "InactiveSubjectOutline" id="Tue3"> OOSE </div> ANRM </td>
-				<td><div class = "InactiveSubjectOutline" id="Tue4"> ISC </div> KLR </td>
-				<td><div class = "InactiveSubjectOutline" id="Tue5"> FDS </div> PSR </td>
-				<td><div class = "InactiveSubjectOutline" id="Tue6"> IE & IPR </div> BNSG </td>	
-			</tr>
-			<tr>
-				<th>
-					Wednesday
-				</th>
-				<td><div class = "InactiveSubjectOutline" id="Wed1"> FDS </div> PSR </td>
-				<td><div class = "InactiveSubjectOutline" id="Wed2"> BDA </div> PSR </td>
-				<td><div class = "InactiveSubjectOutline" id="Wed3"> ISC </div> KLR </td>
-				<td><div class = "InactiveSubjectOutline" id="Wed4"> WT </div> ANRM </td>
-				<td colspan="2">
-					<div class = "InactiveSubjectOutline" id="Wed56"> WT & OOSE LAB </div> ANRM
-				</td>
-			</tr>
-			<tr>
-				<th>
-					Thursday
-				</th>
-				<td><div class = "InactiveSubjectOutline" id="Thu1"> WT </div> ANRM </td>
-				<td><div class = "InactiveSubjectOutline" id="Thu2"> FDS </div> PSR </td>
-				<td><div class = "InactiveSubjectOutline" id="Thu3"> OOSE </div> ANRM </td>
-				<td><div class = "InactiveSubjectOutline" id="Thu4"> IE & PR </div> BNSG</td>
-				<td><div class = "InactiveSubjectOutline" id="Thu5"> -- </div> -- </td>
-				<td><div class = "InactiveSubjectOutline" id="Thu6"> -- </div> -- </td>
-			</tr>
-			<tr>
-				<th>
-					Friday
-				</th>
-				<td><div class = "InactiveSubjectOutline" id="Fri1"> CC </div> CHSR </td>
-				<td><div class = "InactiveSubjectOutline" id="Fri2"> BDA </div> PSR </td>
-				<td><div class = "InactiveSubjectOutline" id="Fri3"> OOSE </div> ANRM </td>
-				<td><div class = "InactiveSubjectOutline" id="Fri4"> ISC </div> KLR </td>
-				<td colspan="2">
-					<div class = "InactiveSubjectOutline" id="Fri56"> WT & OOSE LAB</div> ANRM
-				</td>
-			</tr>
-			<tr>
-				<th>
-					<b>Saturday</b>
-				</th>
-				<td><div class = "InactiveSubjectOutline" id="Sat1"> OOSE </div> ANRM </td>
-				<td><div class = "InactiveSubjectOutline" id="Sat2"> CC </div> CHSR </td>
-				<td><div class = "InactiveSubjectOutline" id="Sat3"> FDS </div> PSR </td>
-				<td><div class = "InactiveSubjectOutline" id="Sat4"> WT </div> ANRM </td>
-				<td colspan="2">
-					<div class = "InactiveSubjectOutline" id="Sat56"> BDA LAB </div> PSR
-				</td>
-			</tr>
-		</table>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 
+    <meta
+      name="description"
+      content="Simple Live TimeTable mini project using HTML, CSS and Javascript."
+    />
+
+    <!-- Facebook Meta Tags -->
+    <meta
+      property="og:url"
+      content="https://vasgreddy.github.io/LiveTimeTable/"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Live Time Table" />
+    <meta
+      property="og:description"
+      content="Simple Live TimeTable mini project using HTML, CSS and Javascript."
+    />
+    <meta
+      property="og:image"
+      content="https://github.com/VASGReddy/LiveTimeTable/blob/main/images/Thumbnail.jpg"
+    />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="vasgreddy.github.io" />
+    <meta
+      property="twitter:url"
+      content="https://vasgreddy.github.io/LiveTimeTable/"
+    />
+    <meta name="twitter:title" content="Live Time Table" />
+    <meta
+      name="twitter:description"
+      content="Simple Live TimeTable mini project using HTML, CSS and Javascript."
+    />
+    <meta
+      name="twitter:image"
+      content="https://github.com/VASGReddy/LiveTimeTable/blob/main/images/Thumbnail.jpg"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <b><div id="displaytime"></div></b>
+      <h3>SEM III - TIME TABLE</h3>
+      <table border="3" cellspacing="0">
+        <tr>
+          <th><br />Day/Period</th>
+          <th>
+            I <br />
+            <small>10:00-11:00</small>
+          </th>
+          <th>
+            II <br />
+            <small>11:00-12:00</small>
+          </th>
+          <th>
+            III <br />
+            <small>12:00-01:00</small>
+          </th>
+          <th>
+            01:00 <br />
+            - <br />
+            02:00
+          </th>
+          <th>
+            IV <br />
+            <small>2:00-3:00</small>
+          </th>
+          <th>
+            V <br />
+            <small>03:00-04:00</small>
+          </th>
+          <th>
+            VI <br />
+            <small>04:00-05:00</small>
+          </th>
+        </tr>
+        <tr>
+          <th>Monday</th>
+          <td>
+            <div class="InactiveSubjectOutline" id="Mon1">WT</div>
+            ANRM
+          </td>
+          <td>
+            <div class="InactiveSubjectOutline" id="Mon2">CC</div>
+            CHSR
+          </td>
+          <td>
+            <div class="InactiveSubjectOutline" id="Mon3">BDA</div>
+            PSR
+          </td>
+          <td rowspan="6" width="40">
+            <div class="InactiveSubjectOutline" id="LunchBreak">
+              L<br />U<br />N<br />C<br />H
+            </div>
+          </td>
+          <td>
+            <div class="InactiveSubjectOutline" id="Mon4">ISC</div>
+            KLR
+          </td>
+          <td colspan="2">
+            <div class="InactiveSubjectOutline" id="mon56">BDA LAB</div>
+            PSR
+          </td>
+        </tr>
+        <tr>
+          <th>Tuesday</th>
+          <td>
+            <div class="InactiveSubjectOutline" id="Tue1">BDA</div>
+            PSR
+          </td>
+          <td>
+            <div class="InactiveSubjectOutline" id="Tue2">CC</div>
+            CHSR
+          </td>
+          <td>
+            <div class="InactiveSubjectOutline" id="Tue3">OOSE</div>
+            ANRM
+          </td>
+          <td>
+            <div class="InactiveSubjectOutline" id="Tue4">ISC</div>
+            KLR
+          </td>
+          <td>
+            <div class="InactiveSubjectOutline" id="Tue5">FDS</div>
+            PSR
+          </td>
+          <td>
+            <div class="InactiveSubjectOutline" id="Tue6">IE & IPR</div>
+            BNSG
+          </td>
+        </tr>
+        <tr>
+          <th>Wednesday</th>
+          <td>
+            <div class="InactiveSubjectOutline" id="Wed1">FDS</div>
+            PSR
+          </td>
+          <td>
+            <div class="InactiveSubjectOutline" id="Wed2">BDA</div>
+            PSR
+          </td>
+          <td>
+            <div class="InactiveSubjectOutline" id="Wed3">ISC</div>
+            KLR
+          </td>
+          <td>
+            <div class="InactiveSubjectOutline" id="Wed4">WT</div>
+            ANRM
+          </td>
+          <td colspan="2">
+            <div class="InactiveSubjectOutline" id="Wed56">WT & OOSE LAB</div>
+            ANRM
+          </td>
+        </tr>
+        <tr>
+          <th>Thursday</th>
+          <td>
+            <div class="InactiveSubjectOutline" id="Thu1">WT</div>
+            ANRM
+          </td>
+          <td>
+            <div class="InactiveSubjectOutline" id="Thu2">FDS</div>
+            PSR
+          </td>
+          <td>
+            <div class="InactiveSubjectOutline" id="Thu3">OOSE</div>
+            ANRM
+          </td>
+          <td>
+            <div class="InactiveSubjectOutline" id="Thu4">IE & PR</div>
+            BNSG
+          </td>
+          <td>
+            <div class="InactiveSubjectOutline" id="Thu5">--</div>
+            --
+          </td>
+          <td>
+            <div class="InactiveSubjectOutline" id="Thu6">--</div>
+            --
+          </td>
+        </tr>
+        <tr>
+          <th>Friday</th>
+          <td>
+            <div class="InactiveSubjectOutline" id="Fri1">CC</div>
+            CHSR
+          </td>
+          <td>
+            <div class="InactiveSubjectOutline" id="Fri2">BDA</div>
+            PSR
+          </td>
+          <td>
+            <div class="InactiveSubjectOutline" id="Fri3">OOSE</div>
+            ANRM
+          </td>
+          <td>
+            <div class="InactiveSubjectOutline" id="Fri4">ISC</div>
+            KLR
+          </td>
+          <td colspan="2">
+            <div class="InactiveSubjectOutline" id="Fri56">WT & OOSE LAB</div>
+            ANRM
+          </td>
+        </tr>
+        <tr>
+          <th>
+            <b>Saturday</b>
+          </th>
+          <td>
+            <div class="InactiveSubjectOutline" id="Sat1">OOSE</div>
+            ANRM
+          </td>
+          <td>
+            <div class="InactiveSubjectOutline" id="Sat2">CC</div>
+            CHSR
+          </td>
+          <td>
+            <div class="InactiveSubjectOutline" id="Sat3">FDS</div>
+            PSR
+          </td>
+          <td>
+            <div class="InactiveSubjectOutline" id="Sat4">WT</div>
+            ANRM
+          </td>
+          <td colspan="2">
+            <div class="InactiveSubjectOutline" id="Sat56">BDA LAB</div>
+            PSR
+          </td>
+        </tr>
+      </table>
     </div>
-</body>
-<script type="text/javascript" src="script.js"></script>
+  </body>
+  <script type="text/javascript" src="script.js"></script>
 </html>
