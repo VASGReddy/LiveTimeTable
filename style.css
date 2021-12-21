@@ -1,0 +1,66 @@
+.container {
+    box-sizing: border-box;
+    text-align: center;
+} 
+
+.InactiveSubjectOutline{
+    background: lightgrey;
+    border-radius: 5px;
+    padding: 5px;
+    margin:5px;
+}
+
+.ActiveSubjectOutline{
+    background: #28A745;
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px;
+    margin:5px;
+    animation: bgblink 4s linear infinite;
+}
+
+h2{
+    margin: 3px;
+    color: rgb(6, 97, 3);;
+}
+
+table, th, td{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td {
+    padding: 5px;
+}
+th{
+    background-color: #9fb1ec;
+    color: rgba(7, 6, 6, 0.76);
+}
+table{
+    -webkit-box-shadow: 6px 6px 8px 0px rgba(126, 131, 126, 0.75);
+    -moz-box-shadow:    6px 6px 8px 0px rgba(126, 134, 126, 0.75);
+    box-shadow:         6px 6px 8px 0px rgba(121, 126, 121, 0.75);
+}
+#displaytime{
+    color: rgb(2, 2, 95);
+}
+
+@keyframes bgblink {
+    0% {
+        background-color: #28A745;
+    }
+    20% {
+        background-color: #089228;
+
+    }
+    50% {
+        background-color: #28A745;
+    }
+    80% {
+        background-color: #089228;
+    }
+    100% {
+        background-color: #28A745;
+    }
+}
