@@ -32,6 +32,10 @@ function highlightCell() {
     let minutes = date.getMinutes(); // 0-59
     //let seconds = date.getSeconds(); // 0-59
 
+    if (hours < 10 || hours > 17){
+        document.getElementById("Heading").innerHTML = "Open This Page In Between 10:00 AM - 5:00 PM <br> SEM III - TimeTable";
+    }
+
     //Lunch Break
     if (day !== 0){
         if (hours === 13){
