@@ -182,7 +182,7 @@ function highlightCell() {
                     document.getElementById('Wed3').className ="InactiveSubjectOutline";
                 }
         }
-        else if (hours === 2){
+        else if (hours === 14){
                 if (minutes >= 0 && minutes <= 59 ){
                     document.getElementById('Wed4').className = "ActiveSubjectOutline";
                 }
@@ -191,7 +191,7 @@ function highlightCell() {
                     document.getElementById('Wed4').className ="InactiveSubjectOutline";
                 }
         }
-        else if (hours === 3 || hours === 4){
+        else if (hours === 15 || hours === 16){
                 if (minutes >= 0 && minutes <= 59 ){
                     document.getElementById('Wed56').className = "ActiveSubjectOutline";
                 }
