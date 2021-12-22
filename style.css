@@ -17,12 +17,12 @@
     border-radius: 5px;
     padding: 5px;
     margin:5px;
-    animation: bgblink 4s linear infinite;
+    animation: bgblink 5s linear infinite;
 }
 
 h3{
     margin: 3px;
-    color: rgb(6, 97, 3);;
+    color: #11882d;
 }
 
 table, th, td{
@@ -48,19 +48,19 @@ table{
 
 @keyframes bgblink {
     0% {
-        background-color: #28A745;
+        background-color: #055818;
     }
     20% {
-        background-color: #089228;
+        background-color: #28A745;
 
     }
     50% {
-        background-color: #28A745;
+        background-color: #055818;
     }
     80% {
-        background-color: #089228;
+        background-color: #28A745;
     }
     100% {
-        background-color: #28A745;
+        background-color: #055818;
     }
 }
