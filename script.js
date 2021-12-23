@@ -26,13 +26,13 @@ displayTime();
 
 //Highlighting Cells
 function highlightCell() {
-    const date = new Date(); // 'Sun Dec 19 2021 20:28:42 GMT+0530 (India Standard Time)'
+    const date = new Date(); // Example : 'Sun Dec 19 2021 20:28:42 GMT+0530 (India Standard Time)'
     let day = date.getDay(); // 0-6
     let hours = date.getHours(); // 0-23
     let minutes = date.getMinutes(); // 0-59
     //let seconds = date.getSeconds(); // 0-59
 
-    if (hours < 10 || hours > 17){
+    if (hours < 10 || hours >= 17){
         document.getElementById("Heading").innerHTML = "Open This Page In Between 10:00 AM - 5:00 PM <br> SEM III - TimeTable";
     }
 
