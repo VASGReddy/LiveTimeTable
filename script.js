@@ -172,7 +172,7 @@ function highlightCell() {
     }
 
     //Friday
-    else if (day === 1){
+    else if (day === 5){
         if (hours === 10){
             if (minutes >= 0 && minutes <= 59 ){
                 document.getElementById('Fri1').className = "ActiveSubjectOutline";
